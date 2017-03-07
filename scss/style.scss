@@ -1,0 +1,239 @@
+// Core variables and mixins
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+// Reset and dependencies
+@import "bootstrap/normalize";
+@import "bootstrap/print";
+@import "bootstrap/glyphicons";
+
+// Core CSS
+@import "bootstrap/scaffolding";
+@import "bootstrap/type";
+@import "bootstrap/code";
+@import "bootstrap/grid";
+//@import "bootstrap/tables";
+@import "bootstrap/forms";
+@import "bootstrap/buttons";
+//@import "bootstrap/input-groups";
+
+// Components
+//@import "bootstrap/component-animations";
+//@import "bootstrap/dropdowns";
+//@import "bootstrap/button-groups";
+//@import "bootstrap/input-groups";
+//@import "bootstrap/navs";
+//@import "bootstrap/navbar";
+//@import "bootstrap/breadcrumbs";
+//@import "bootstrap/pagination";
+//@import "bootstrap/pager";
+//@import "bootstrap/labels";
+//@import "bootstrap/badges";
+//@import "bootstrap/jumbotron";
+//@import "bootstrap/thumbnails";
+//@import "bootstrap/alerts";
+//@import "bootstrap/progress-bars";
+//@import "bootstrap/media";
+//@import "bootstrap/list-group";
+//@import "bootstrap/panels";
+//@import "bootstrap/responsive-embed";
+//@import "bootstrap/wells";
+//@import "bootstrap/close";
+
+// Components w/ JavaScript
+//@import "bootstrap/modals";
+//@import "bootstrap/tooltip";
+//@import "bootstrap/popovers";
+//@import "bootstrap/carousel";
+
+// Utility classes
+@import "bootstrap/utilities";
+@import "bootstrap/responsive-utilities";
+
+
+
+body {
+	font-family: 'Roboto', sans-serif;
+	header {
+		background: url(../img/banner-bg.png) no-repeat;
+		padding-bottom:20px;
+		@media (min-width: $screen-sm-min) {
+    				padding-bottom:0px;
+  					}
+		.logo {
+			background:url(../img/shopping-bag-icon-copy.png) no-repeat;
+			color: #fff;
+			padding-left: 50px;
+			&:hover {text-decoration: none;}
+			&:focus {text-decoration: none;}
+		}
+		nav {
+			padding:4% 0;
+			a{
+				@media (min-width: $screen-sm-min) {
+    				font-size:14px;
+    				padding:0 16px;
+  					}
+				&:hover {text-decoration: none;color:#999999;}
+				&:focus {text-decoration: none;color:#999999;}
+				color:#fff;
+				font-size:12px;
+    			padding:0 4px;
+
+			}
+		}
+		p {color:#fff;}
+		h3 {color:#fff;}
+		.btn-group {
+			position: relative;
+			span {
+				display: block;
+				width: 19px;
+				height: 19px;
+				background:#fff;
+				border-radius: 15px;
+				position: absolute;
+    			top: 8px;
+    			left: 126px;
+    			text-align: center;
+			}
+		}
+	}
+	.about {
+		padding:8% 0;
+		.social {
+			a {
+				width:47px;
+				height:45px;
+				display:inline-block;
+			}
+			.tw {background:url(../img/sprite.png)}
+			.fb {background:url(../img/sprite.png)182px 0px;}
+			.o {background:url(../img/sprite.png)113px 0px;}
+			.p {background:url(../img/sprite.png)47px 0px;}
+		}
+	} 
+	.services {
+		background:#f6f6f7;
+		padding:8% 0;
+		text-align:center;
+	}
+	.feature {
+		background:#dda56c;
+		padding:8% 0 0 0;
+		color:#fff;
+		.slider-wrap {
+			position:relative;
+			text-align:center;
+			.left-arrow {
+			background:url(../img/-.png) no-repeat;
+			width:26px;
+			height:27px;
+			display:block;
+			position:absolute;
+			left:0;
+			top:50%;
+		}
+		.right-arrow {
+			background:url(../img/--.png)no-repeat;
+			width:26px;
+			height:27px;
+			display:block;
+			position:absolute;
+			right:0;
+			top:50%;
+		}
+		}
+	}
+	.content {
+		background:#f6f6f7;
+		padding:8% 0;
+		text-align:center;
+		.block {
+			color:#fff;
+			text-align:center;
+			padding-bottom: 8%;
+			position:relative;
+			margin-bottom:20px;
+		}
+		.economy {background:#6cbfa1;
+			.head {
+				background:#1b7e5a;
+				padding:5% 0 15% 0;
+				margin-bottom: 40px;
+			}
+			b {
+				background:#166549;
+				width:50px;
+				height:50px;
+				display:block;
+				border-radius:25px;
+				padding-top: 7px;
+    			font-size: 24px;
+    			position:absolute;
+    			left:35%;
+    			top:27px;
+			}
+			button {background:#1b7e5a;border: none;padding:13px;}
+		}
+		.personal {background:#f3aea8;
+			.head {
+				background:#e76e66;
+				padding:5% 0 15% 0;
+				margin-bottom: 40px;
+			}
+			b {
+				background:#b95752;
+				width:50px;
+				height:50px;
+				display:block;
+				border-radius:25px;
+				padding-top: 7px;
+    			font-size: 24px;
+    			position:absolute;
+    			left:35%;
+    			top:27px;
+			}
+			button {background:#e76e66;border: none;padding:13px;}
+		}
+		.busines {background:#9bc9d4;
+			.head {
+				background:#579aa9;
+				padding:5% 0 15% 0;
+				margin-bottom: 40px;
+			}
+			b {
+				background:#457b87;
+				width:50px;
+				height:50px;
+				display:block;
+				border-radius:25px;
+				padding-top: 7px;
+    			font-size: 24px;
+    			position:absolute;
+    			left:35%;
+    			top:27px;
+			}
+			button {background:#579aa9;border: none;padding:13px;}
+		}
+	}
+	footer {
+		background:#2e2e2e;
+		padding:8% 0;
+		text-align:center;
+		color:#fff;
+		h3 {
+			margin-bottom:30px;
+		} 
+		address {margin-bottom:20px;display: inline-block;
+    margin-right: 20px;}
+		input[type="text"] {
+			height:35px;
+			width:100%;
+			padding-left:15px;
+		}
+		textarea.form-control {margin-bottom:10px;padding-bottom:12px;height:134px;}
+		.form-control {color:#b0b0b0;}
+	}
+	
+}
